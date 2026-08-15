@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Specsstyle - Eye Care HTML website Template</title>
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <!--Custome Style -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!--shCoreDefault Style -->
+    <link rel="stylesheet" href="assets/css/shCoreDefault.css" type="text/css">
+    <!--FontAwesome Font Style -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navigation">
+    <header id="top">
+        <div class="container">
+            <h1>Specsstyle - Eye Care HTML website Template</h1>
+            <p>This Documentation make you easier to customize the look of the template as you want.</p>
+        </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3" id="navigation">
+                <ul class="nav nav-list">
+                    <li><a href="#html"><i class="fa fa-chevron-right"></i> HTML Structure</a>
+                        <ul>
+                            <li><a href="#sitelogo">Site Logo</a></li>
+                            <li><a href="#navigations">Navigation</a></li>
+                            <li><a href="#sectionheading">Section Heading</a></li>
+                            <li><a href="#bgcolor">Section Background Color</a></li>
+                            <li><a href="#footer_elements">Footer Elements</a></li>
+                            <li><a href="#fontawesome">FontAwesome Icon Packs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#css"><i class="fa fa-chevron-right"></i> CSS Structure</a></li>
+                    <li><a href="#scripts"><i class="fa fa-chevron-right"></i> Scripts</a></li>
+                    <li><a href="#image"><i class="fa fa-chevron-right"></i> Image Files</a></li>
+                    <li><a href="#credits"><i class="fa fa-chevron-right"></i> Credits</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9" id="content">
+                <!-- <div id="html" class="preview_padding">
+                    <img src="assets/images/01_preview.jpg" alt="image">
+                </div> -->
+                <div id="html" class="heading_padding">
+                    <h3>HTML Structure</h3>
+                </div>
+                <hr />
+                <p>This template uses the <strong>100% grid system (12 columns)</strong> which will help streamline any customization you wish to make. If you're unfamiliar with the 1140px grid system, be sure to read about it <strong><a href="http://getbootstrap.com/examples/grid/" target="_blank">here!</a></strong></p>
+                <p>The main structure of this site is wrapped in a <strong>'container'</strong> div. Inside of that div you will find each major section of the site given an appropritae grid size all equalling 12 columns in length.</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+
+                    <section class="secon-pm" style="background-color: #f6f7f9">
+                        <div class="container">
+                          <div class="row mx-auto">
+                            <div class="col-xl-8 mb-xl-0 mb-5 ">
+                              <div class="row row-cols-1 row-cols-md-3  row-cols-sm-2 g-4">
+                                <div class="col">
+                                  <div class="card h-100 border animated-card mt-4" data-aos="zoom-out">
+                                    <img src="assets/image/medical_service.png" class="card-img-top p-3 mx-auto card-top-center-img"
+                                      alt="..." />
+                                    <div class="card-body">
+                                      <h5 class="card-title"  style="color: #1e306e;">Compassion</h5>
+                                      <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Aliquam condimentum id libero vitae ultrices.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>    
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+
+                    </pre>
+                <div class="info">
+                    <p><span class="label label-warning">Note:</span> If you want to add padding in section use <strong>class="section-padding"</strong>
+                        80px padding top & 80px padding bottom added in section. You don't need padding remove <strong>class="section-padding".</strong> </p>
+                </div>
+                <div id="sitelogo" class="sub_headding">
+                    <h4>Site Logo</h4>
+                </div>
+                <p>You can change the main site logo with change this code:</p>
+                    <pre class="brush: js; ruler: true; first-line: 1; highlight:[3]">
+                         <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-start mb-2 mb-md-0">
+                            <div class="nav-logo ms-lg-auto me-auto ">
+                              <a href="index.html">
+                                <img class="img-fluid log-img  " src="assets/image/SpecsStyle (2).png" alt="">
+                              </a>
+                            </div>
+                        </div>
+                    </pre>
+                <div id="navigations" class="sub_headding">
+                    <h4>Main Navigation</h4>
+                </div>
+                <p>You can change the main site navigation with change this code:</p>
+                    <pre class="brush: js; ruler: true; first-line: 1; highlight:[1,3]">
+                         <div class="navbar py-3  " style="z-index: 9;" >
+                            <div class="nav-logo d-xl-none d-block ms-lg-auto me-auto ">
+                              <div class="nav-logo  ms-lg-auto me-auto ">
+                                <a href="index.html">
+                                  <img class="img-fluid log-img " src="assets/image/logo-img.png" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="nav-items navigation mx-auto">
+                              <ul class="main-menu mb-0 py-3">
+                                <li><a href="index.html"> Home </a></li>
+                                <li class=""><a href="About-clinic.html"> About us</a></li>
+                                <li><a href="Price.html"> Price </a></li>
+                                <li><a href="Contact.html"> Contact us </a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </pre>
+                <br>
+                <div id="sectionheading" class="sub_headding">
+                    <h4>Section Heading</h4>
+                </div>
+                <p>Use this code for section heading.</p>
+                    <pre class="brush: js; ruler: true; first-line: 1; highlight:[ 1,3]">
+                        &lt;!-- Heading --&gt;
+                        <section class="secon-pm py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="fs-3 text-primary py-2">Our Services</h3>
+                <h1 class="fs-1 py-3 fw-bold" style="color: #1e306e;">
+                    We offer a whole range of treatments <br class="d-none d-md-block" />
+                    for you, your family, and friends
+                </h1>
+            </div>
+        </div>
+                        &lt;!-- /Heading --&gt;
+                    </pre>
+                <div id="bgcolor" class="sub_headding">
+                    <h4>Section Background Color</h4>
+                </div>
+                <pre class="brush: js; ruler: true; first-line: 1 highlight:[1];">
+                        <section class="secon-pm" style="background-color: #f6f7f9"></section>
+                    </pre>
+                <div class="info">
+                    <p><span class="label label-warning">Note:</span> If you want to green background color in section use <strong>class="thm-bg-color-one"</strong>
+                        &nbsp;&nbsp;<span style="background:#deb668; display:inline-block; vertical-align:middle; width:30px; height:20px;"></span>
+                    </p>
+                </div>
+                <br>
+                <div id="footer_elements" class="sub_headding">
+                    <h4>Footer Elements</h4>
+                </div>
+                <p>In this section you can change your social media links and copyright text with your own name or company.</p>
+                    <pre class="brush: js; ruler: true; first-line: 1; highlight:[4]">
+                        <!-- Copyright Start -->
+                        <footer style="background-color: #1d41b9;">
+                          <div class="container  ">
+                              <div class="row pt-5 ">
+                               
+                                </div>
+                              </div>
+                          <div class=" container-fluid  mt-5 pt-2 pb-1 " style="background-color: #19379d;">
+                            <p class="text-center text-white my-2 fs-6">Copyright © 2025 specsstyle. All rights reserved.</p>
+                          </div>
+           
+                    </footer>
+                        <!-- Copyright End -->
+                    </pre>
+                <p><span class="label label-warning">Note:</span> You can see the complete list of font icons <strong><a href="http://fontawesome.io/icons/" target="_blank">here!</a></strong></p><br>
+                <br>
+                <div id="fontawesome" class="sub_headding">
+                    <h4>FontAwesome Icon Packs</h4>
+                </div>
+                <p>You can also use built-in icon packs in this template, all icons use CSS Font feature, so you can edit and give color to the icon easily. For referrences to easier you use all icons you can visit <strong><a href="http://fontawesome.io/icons/" target="_blank">here!</a></strong></p>
+                <br>
+                <div id="css" class="heading_padding">
+                    <h3>CSS Structure</h3>
+                </div>
+                <p>I'm using one main CSS file <strong>(assets/css/style.css)</strong>, in this template which you are free to modify depending on the customization you require. Below are 10 additional CSS files:</p>
+                <ul style="list-style-type:square;">
+                    <li><strong>bootstrap.min.css</strong> - This is a main stylesheet that required for basic template styling like grid, form, input and web elements.</li>
+                    <li><strong>font-awesome.min.css</strong> - CSS stylesheets for bootstrap font icon packs.</li>
+                    <li><strong>bootstrap-icons.css</strong> - CSS stylesheets for font icon packs.</li>
+                    <li><strong>slick.css</strong> - This stylesheet used for styling the Banner slideshow.</li>
+                    <li><strong>magnific-popup.css</strong> - This stylesheet used for styling the Image & Video Popup.</li>
+                    <li><strong>jquery-ui.css</strong> - This stylesheet used for styling the JQuery Elements.</li>
+                    <li><strong>style.css</strong> - This stylesheet used for styling the Web Layout.</li>
+                    <li><strong>responsive.css</strong> - This stylesheet used for styling the Web Layout.</li>
+                </ul>
+                <p>The main CSS file <strong>(assets/css/style.css)</strong> contains all of the specific stylings for the page. The file was divided into several sessions as below:</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+/*-----------------------------------------------------------------------------------
+
+   
+-----------------------------------------------------------------------------------*/
+CSS styles for support all kinds of different screen sizes
+                    </pre>
+                <p>If you would like to edit a specific section of the site, simply find the appropriate label in the <strong>.css</strong> file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+                <br>
+                <div id="scripts" class="heading_padding">
+                    <h3>Scripts</h3>
+                </div>
+                <p>This theme uses several scripts many of which are documented within the theme's code. If you're a developer, you will find this particularly useful.</p>
+                <ul class="nav-list nav-list-custom">
+                    <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-chevron-right"></i> jquery.min.js</a></li>
+                    <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-chevron-right"></i>bootstrap.bundle.min.js</a></li>
+                    <li><a href="https://kenwheeler.github.io/slick/" target="_blank"><i class="fa fa-chevron-right"></i>slick.min.js</a></li>
+                    <li><a href="https://dimsemenov.com/plugins/magnific-popup/" target="_blank"><i class="fa fa-chevron-right"></i>jquery.magnific-popup.min.js</a></li>
+                    <li><a href="https://jqueryui.com/" target="_blank"><i class="fa fa-chevron-right"></i>jquery-ui.js</a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>custom.js</a></li>
+                </ul>
+                <br>
+                <div id="image" class="heading_padding">
+                    <h3>Image Files</h3>
+                </div>
+                <ul class="nav-list nav-list-custom">
+                    <li><a href="https://pixabay.com/" target="_blank"><i class="fa fa-chevron-right"></i> Pixabay</a></li>
+                    <li><a href="http://www.freepik.com/" target="_blank"><i class="fa fa-chevron-right"></i> Freepik</a></li>
+                    <li><a href="https://www.pexels.com/" target="_blank"><i class="fa fa-chevron-right"></i> Pixels</a></li>
+                </ul>
+                <br>
+                <div id="credits" class="heading_padding">
+                    <h3>Credits</h3>
+                </div>
+                <ul class="nav-list nav-list-custom">
+                    <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-chevron-right"></i> Twitter Bootstrap</a></li>
+                    <li><a href="http://fontawesome.io/" target="_blank"><i class="fa fa-chevron-right"></i> Font Awesome</a></li>
+                    <li><a href="https://www.google.com/fonts" target="_blank"><i class="fa fa-chevron-right"></i> Google WebFonts</a></li>
+                </ul>
+                <br><br>
+            </div>
+        </div>
+        <div class="alert">
+            <h4>Thank you for purchasing Specsstyle - Eye Care HTML website Template.</h4>
+        </div>
+    </div>
+    <footer id="footer"><br>
+        <div class="container">© Specsstyle - <span id="year"></span> | All Right Reserved.</div>
+    </footer>
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/shCore.js"></script>
+    <script src="assets/js/shBrushJScript.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
